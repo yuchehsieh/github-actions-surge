@@ -39,4 +39,4 @@ jobs:
         run: npm run build
         
       - name: deploying using surge
-        run: surge ./build http://docker-wordpress.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build http://murphy-github-actions-surge.surge.sh --token ${{ secrets.SURGE_TOKEN }}
